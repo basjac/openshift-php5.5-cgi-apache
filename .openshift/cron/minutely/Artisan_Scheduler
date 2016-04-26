@@ -1,0 +1,6 @@
+#!/bin/bash
+
+PHPPATH_ENV_INCLUDE=${OPENSHIFT_HOMEDIR}/app-root/repo/.openshift/env_phppath.sh
+source $PHPPATH_ENV_INCLUDE
+
+php ${OPENSHIFT_HOMEDIR}/app-root/repo/artisan schedule:run
